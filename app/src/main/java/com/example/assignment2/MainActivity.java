@@ -4,11 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import android.webkit.WebView;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     FragmentManager fg;
-
+    private TickerListFragment tickerListFragment;
     private WebView webView;
 
     @Override

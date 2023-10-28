@@ -28,4 +28,9 @@ public class InfoWebFragment extends Fragment {
         webView.getSettings().setJavaScriptEnabled(true);
         return view;
     }
+
+    public void loadWebsiteForTicker(String ticker) {
+        String tickerUrl = "https://seekingalpha.com/symbol/" + ticker;
+        webView.loadUrl(tickerUrl);
+    }
 }
